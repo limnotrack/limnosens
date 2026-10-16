@@ -1,0 +1,27 @@
+Package: limnosens
+Title: Limnological Sensor Physics, Unit Conversion and Instrument Correction
+Version: 0.1.0
+Authors@R: person("Chris", "McBride", role = c("aut", "cre"),
+    email = "chris@limnotrack.com")
+Description: Deterministic, equation-based tools for limnological sensor data
+    processing. Dissolved oxygen saturation calculations (Benson & Krause),
+    unit conversions (mg/L ↔ %sat), barometric pressure from altitude or
+    Open-Meteo API, sensor-specific corrections for Ponsel OptoD and In-Situ
+    RDO, conductivity cell equilibration artifact correction (single/double
+    exponential), and temperature sensor shelf/sawtooth artifact correction.
+    Functions are stateless and independently testable against published values.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Imports:
+    stats
+Suggests:
+    ltvocab,
+    data.table,
+    dplyr,
+    ggplot2,
+    patchwork,
+    httr2,
+    jsonlite,
+    scattermore
+Config/roxygen2/version: 8.1.0
